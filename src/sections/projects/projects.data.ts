@@ -1,0 +1,93 @@
+import { ProjectItem } from '../../types/portfolio.types';
+
+export const PROJECTS_DATA: ProjectItem[] = [
+  {
+    id: 'mediflow-hospital',
+    number: '01',
+    title: 'Hospital Management System (MediFlow)',
+    subtitle: 'Enterprise Java OOP Architecture & Strict RBAC Portal',
+    tagline: 'Role-based healthcare pipeline managing 7 distinct clinical actors with zero redundant record duplication.',
+    description:
+      'An enterprise-grade hospital management portal in Java implementing strict Role-Based Access Control (RBAC) across 7 distinct actors (Admin, Doctor, Patient, Pharmacist, Cashier, Lab Specialist, Receptionist) to enforce end-to-end medical data privacy and clinical operational integrity.',
+    features: [
+      'Strict RBAC across 7 distinct actors to enforce medical data privacy',
+      'Decoupled multi-department pipeline coordinating patient registration, clinical diagnosis, and lab routing',
+      'Dynamic automated multi-tier billing calculations and invoice generation',
+      'Java Collections and custom exception handling ensuring zero record duplication',
+    ],
+    contributions: [
+      'Architected the core system layout utilizing OOP paradigms (polymorphism, abstract interfaces, composition)',
+      'Engineered dynamic state-machine transitions between triage, doctor examination, pharmacy, and billing',
+      'Built custom data access validation layers preventing unauthorized cross-role data access',
+    ],
+    techStack: ['Java', 'OOP', 'Data Structures & Collections', 'RBAC', 'HTML/CSS', 'JavaScript', 'Git'],
+    githubUrl: 'https://github.com/Yash-Pratap-Singh-1904/mediflow-hms-portal.git',
+    category: 'systems',
+    status: 'Completed',
+    date: "Jul' 2026",
+    image: '/images/Hospital Management System profile.png',
+    illustrationType: 'hospital',
+  },
+  {
+    id: 'dynamic-memory-visualizer',
+    number: '02',
+    title: 'Dynamic Memory Visualizer',
+    subtitle: 'Complete Interactive OS Memory Management Simulator',
+    tagline: 'Interactive simulator visualizing 5 page replacement algorithms with step-by-step playback and comparative analytics.',
+    description:
+      'An advanced educational web application built to visualize operating system memory management through the interactive simulation of 5 distinct page replacement algorithms, offering step-by-step execution, dynamic playback controls, and detailed performance analytics.',
+    features: [
+      'Interactive simulation of 5 distinct page replacement algorithms: FIFO, LRU, Optimal, Clock, and NFU.',
+      'Real-time memory state visualization featuring Frame Views, access frequency Heat Maps, and complete execution Timelines.',
+      'Dynamic execution controls with manual step-by-step progression and an adjustable auto-run playback mode.',
+      'Comprehensive analytics engine enabling side-by-side algorithm comparison and detailed performance metric charting.',
+    ],
+    contributions: [
+      'Architected a completely client-side, zero-installation web tool utilizing JavaScript, HTML, and CSS for immediate browser accessibility.',
+      'Engineered robust algorithm logic to track memory frames, calculate page faults, and manage algorithm-specific data structures precisely at each state change.',
+      'Implemented a highly responsive, user-centric interface featuring 4 custom themes, keyboard shortcut integration, and persistent local storage configuration management.',
+      'Built seamless data export pipelines allowing users to download structured simulation data in JSON, CSV, and TXT formats for academic review.',
+    ],
+    techStack: ['JavaScript', 'HTML/CSS', 'Algorithms', 'Data Visualization', 'Operating Systems'],
+    githubUrl: 'https://github.com/SangamSitapuri07/dynamic-memory-visualizer.git',
+    category: 'systems',
+    status: 'Completed',
+    date: "Apr' 2026",
+    image: '/images/Dynamic Memory Visualizer profile.png',
+    illustrationType: 'dynamic-memory',
+  },
+  {
+    id: 'medpredict-platform',
+    number: '03',
+    title: 'MedPredict: Clinical Health Risk Prediction Platform',
+    subtitle: 'Ensemble ML Pipeline for Multi-Disease Screening',
+    tagline: 'Applied machine-learning platform achieving 84.93% accuracy with SMOTE and custom clinical thresholding.',
+    description:
+      'Architected an end-to-end clinical machine-learning pipeline spanning 4 disease modules (Obesity, Heart Disease, Sleep Apnea, Diabetes). Applied automated data cleaning, deduplication (723 rows removed), imputation, target leakage prevention, and class-balancing with SMOTE.',
+    features: [
+      '4 Clinical disease prediction modules: Obesity, Heart Disease, Sleep Apnea, Diabetes',
+      'Trained and evaluated ensemble architectures: XGBoost, Random Forest, Logistic Regression',
+      'Clinical class-imbalance correction via SMOTE',
+      '10-Fold Stratified Cross-Validation benchmarked with ROC-AUC and precision-recall curves',
+      'Custom probability thresholding (0.3 threshold) optimizing high-risk clinical recall',
+    ],
+    contributions: [
+      'Engineered automated preprocessing pipeline preventing data leakage and imputing clinical outliers',
+      'Benchmarked ensemble classifiers: achieved 84.93% accuracy (84.39% F1) on Obesity and 78.69% accuracy on Heart Disease',
+      'Built real-time REST inference service in Flask with modular input validation',
+    ],
+    metrics: [
+      { label: 'Obesity Accuracy', value: '84.93%' },
+      { label: 'Obesity F1-Score', value: '84.39%' },
+      { label: 'Heart Disease Accuracy', value: '78.69%' },
+      { label: 'Cross-Validation', value: '10-Fold Stratified' },
+    ],
+    techStack: ['Python', 'Scikit-Learn', 'XGBoost', 'Random Forest', 'SMOTE', 'Pandas', 'NumPy', 'Flask'],
+    githubUrl: 'https://github.com/Amritanshu2580/Disease-Prediction.git',
+    category: 'ml',
+    status: 'Completed',
+    date: "Apr' 2025",
+    image: '/images/MedPredict profile.jpg',
+    illustrationType: 'medical-prediction',
+  },
+];

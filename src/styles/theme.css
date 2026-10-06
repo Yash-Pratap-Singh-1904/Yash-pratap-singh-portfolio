@@ -1,0 +1,48 @@
+:root {
+  /* Fonts */
+  --font-serif: 'DM Serif Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Default Dark Theme: Obsidian and Champagne */
+  --bg-main: #101112;
+  --bg-secondary: #171819;
+  --bg-card: #1D1E20;
+  --bg-elevated: #252629;
+  --text-primary: #F2EEE7;
+  --text-secondary: #B8B2A8;
+  --text-muted: #85847F;
+  --accent-primary: #D9AA70;
+  --accent-primary-hover: #E4BE8B;
+  --accent-secondary: #A9B69B;
+  --border-color: #343536;
+  --border-subtle: rgba(255, 255, 255, 0.07);
+  --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  --glow-accent: rgba(217, 170, 112, 0.15);
+  --dot-color: rgba(242, 238, 231, 0.05);
+}
+
+html.light {
+  /* Light Theme: Warm Ivory and Stone */
+  --bg-main: #F2EFE8;
+  --bg-secondary: #E8E3DA;
+  --bg-card: #FAF8F3;
+  --bg-elevated: #FFFFFF;
+  --text-primary: #252522;
+  --text-secondary: #5E5A52;
+  --text-muted: #79746A;
+  --accent-primary: #A87543;
+  --accent-primary-hover: #926435;
+  --accent-secondary: #78856C;
+  --border-color: #D8D1C6;
+  --border-subtle: rgba(0, 0, 0, 0.06);
+  --card-shadow: 0 10px 25px -5px rgba(60, 50, 40, 0.07);
+  --glow-accent: rgba(168, 117, 67, 0.12);
+  --dot-color: rgba(37, 37, 34, 0.06);
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+}
